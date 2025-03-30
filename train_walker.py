@@ -92,7 +92,7 @@ checkpoint_callback = CheckpointCallback(
 stats_callback = StatsCallback()
 
 # Train the model
-total_timesteps = 10_000  # Reduced timesteps for faster training
+total_timesteps = 20_000  # Increased timesteps for better training
 model.learn(
     total_timesteps=total_timesteps,
     callback=[checkpoint_callback, stats_callback],
